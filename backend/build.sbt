@@ -2,9 +2,9 @@ name := "backend"
 
 version := "1.0"
 
-scalaVersion := "2.10.6"
+scalaVersion := "2.11.1"
 
-libraryDependencies += "com.typesafe.scala-logging" % "scala-logging-slf4j_2.10" % "2.1.2"
+libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.4.0"
 
 libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.10"
 

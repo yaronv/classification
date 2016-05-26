@@ -7,7 +7,7 @@ import javax.imageio.ImageIO
 import akka.actor.Actor
 import akka.cluster.Cluster
 import akka.cluster.ClusterEvent._
-import com.typesafe.scalalogging.slf4j.LazyLogging
+import com.typesafe.scalalogging.LazyLogging
 
 /**
   * Created by yaron on 21/04/16.

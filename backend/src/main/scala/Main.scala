@@ -1,4 +1,4 @@
-import com.typesafe.scalalogging.slf4j.LazyLogging
+import com.typesafe.scalalogging.LazyLogging
 import ip.ImageProcessor
 
 /**
