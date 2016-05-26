@@ -1,15 +1,31 @@
 @(message: String)
 
 @main(message) {
-    <h1>@message</h1>
-    <p>This form let's you upload an image directly and receive its feature vector with the resulting classification. A typical client application would first call /identifications using POST receiving a result containing the upload url which can then be used to transfer the image data in a seperate POST request.</p>
+<section id="wrapper">
+    <section id="bg">
+        <img src="@routes.Assets.at("images/bg-waste.jpg")" type="text/javascript">" alt="Online Classification Tool" />
+    </section>
+    <!-- /#bg -->
 
-    @helper.form(action = routes.IdentificationController.uploadImageDirectly(), 'enctype -> "multipart/form-data") {
-      <input type="file" name="image">
-      
-      <p>
-        <input type="submit">
-      </p>
-    }
+    <section class="content-box">
+        <h1 id="logo"><a href="#" class="notext">YOUR LOGO</a></h1>
+        <section class="blackbox">
+            <h2>@message</h2>
+            <p>This form let's you upload an image directly and receive its feature vector with the resulting classification. A typical client application would first call /identifications using POST receiving a result containing the upload url which can then be used to transfer the image data in a seperate POST request.</p>
+            @helper.form(action = routes.IdentificationController.uploadImageDirectly(), 'enctype -> "multipart/form-data") {
+            <input type="file" name="image">
 
+            <p>
+                <input type="submit">
+            </p>
+            }
+            <p>Your information will *never* be shared or sold to a 3rd party.</p>
+        </section>
+        <!-- /.blackbox -->
+        <footer class="footer">
+            Created By <a href="http://yaronvazana.com">Yaron Vazana</a>
+        </footer>
+    </section>
+    <!-- /.content-box -->
+</section>
 }
