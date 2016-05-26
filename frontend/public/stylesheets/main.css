@@ -48,7 +48,7 @@ textarea { overflow: auto; }
 #bg { position:absolute; overflow:hidden; left:0; right:0; z-index: 1; width:100%; height:100%; }
 #bg img { min-width:100%; min-height:auto;   position:relative; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
 
-.content-box { width:622px;  z-index: 2; position:relative; left: calc(50% - 311px); top:0; padding:34px 0;   }
+.content-box { width:622px;  z-index: 2; position:absolute; left: calc(50% - 311px); top:20%; }
 .content-box.type2 { padding-top:77px;  }
 .content-box.type2 .blackbox form{ padding-top:6px;  }
 
@@ -69,7 +69,7 @@ h1#logo.lead-logo a { width:180px; height:31px; background-image:url(images/lead
 	-moz-border-radius:7px;
 	-webkit-border-radius:7px;
 }
-.blackbox { text-align:center; padding-bottom:17px; margin-bottom:11px;  }
+.blackbox { text-align:center; padding-bottom:17px; box-shadow: 0 0 25px 0px #444;-moz-box-shadow: 0 0 25px 0px #444;  }
 .blackbox h3,
 .blackbox h2 { font-family: 'SegoeUI-SemiBold'; font-size:28px; line-height:28px; color:#fff; font-weight:normal; padding:20px 40px; }
 .blackbox h3 { font-size:22px; line-height:26px; padding:12px 30px; }
