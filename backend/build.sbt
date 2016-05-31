@@ -14,6 +14,8 @@ libraryDependencies += "org.apache.spark" %% "spark-streaming" % "1.3.0" % "comp
 
 libraryDependencies += "com.typesafe.akka" %% "akka-cluster" % "2.3.15" % "compile"
 
+libraryDependencies += "com.typesafe.akka" % "akka-cluster-metrics_2.11" % "2.4.6"
+
 classpathTypes += "maven-plugin"
 
 libraryDependencies += "org.bytedeco" % "javacv" % "1.1" % "compile"
