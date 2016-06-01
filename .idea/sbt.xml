@@ -10,7 +10,7 @@
             <option value="$PROJECT_DIR$/backend/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="0.13.8" />
+        <option name="sbtVersion" value="0.13.5" />
         <option name="useAutoImport" value="true" />
         <option name="useOurOwnAutoImport" value="true" />
       </SbtProjectSettings>
@@ -22,7 +22,7 @@
             <option value="$PROJECT_DIR$/frontend/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="0.13.5" />
+        <option name="sbtVersion" value="0.13.8" />
         <option name="useAutoImport" value="true" />
         <option name="useOurOwnAutoImport" value="true" />
       </SbtProjectSettings>

@@ -1,26 +1,25 @@
-name := "frontend"
+name := "backend"
 
 version := "1.0"
 
 scalaVersion := "2.11.1"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.4.0"
 
-resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.10"
 
-resolvers += "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
+libraryDependencies += "org.apache.spark" %% "spark-core" % "1.3.0" % "compile"
 
-// Dependencies
-libraryDependencies ++= Seq(
-  filters,
-  cache,
-  "org.reactivemongo" %% "play2-reactivemongo" % "0.10.5.akka23-SNAPSHOT",
-  "com.typesafe.akka" %% "akka-testkit" % "2.3.3" % "test",
-  "nz.ac.waikato.cms.weka" % "weka-dev" % "3.7.11"
-)
+libraryDependencies += "org.apache.spark" %% "spark-streaming" % "1.3.0" % "compile"
 
+libraryDependencies += "com.typesafe.akka" %% "akka-cluster" % "2.3.15" % "compile"
 
-val libraryPath = Seq("lib").mkString(java.io.File.pathSeparator)
+libraryDependencies += "com.typesafe.akka" % "akka-cluster-metrics_2.11" % "2.4.6"
 
-javaOptions += s"-Djava.library.path=$libraryPath"
+classpathTypes += "maven-plugin"
 
+libraryDependencies += "org.bytedeco" % "javacv" % "1.1" % "compile"
+
+libraryDependencies += "org.bytedeco" % "javacpp" % "1.1" % "compile"
+
+resolvers += "Akka Repository" at "http://repo.akka.io/releases/"
